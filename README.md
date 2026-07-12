@@ -1,26 +1,32 @@
 # Rule-Based-AI-Chatbot
-Overview
-The Rule-Based AI Chatbot is a deterministic, lightweight conversational framework built using Python. Unlike complex probabilistic models, this engine operates on predefined logic and pattern-matching rules, ensuring predictable, consistent, and safe responses for specific technical interactions. This project was developed by Rahul Kumar to demonstrate efficient control flow and logic implementation.
+Overview:
+DecodeLabs Logic Engine is a simple, rule-based chatbot built in Python. It demonstrates core programming concepts like control flow, string preprocessing, and dictionary-based lookups to simulate conversational responses — without relying on any external AI/ML libraries.
 
-Key Features
-Deterministic Logic: Provides exact, reliable responses based on user input, making it ideal for support scenarios where accuracy is paramount.
+🎯 Purpose:
+This project is designed as a learning exercise to show how a chatbot's "logic core" works before adding real AI/LLM capabilities. It highlights the difference between a deterministic rule-based system and a probabilistic AI model.
 
-Python-Powered: Built with clean, modular Python code, utilizing object-oriented principles for maintainability.
+🧠 How It Works:
+Input Preprocessing – User input is lowercased, stripped of punctuation, and trimmed using _preprocess_input().
+Response Lookup – The cleaned input is matched against a dictionary of predefined keyword-response pairs.
+Fallback Handling – If no match is found, a default "not programmed for that" response is returned.
+Interactive Loop – The run() method starts a console-based chat loop that continues until the user types exit.
 
-Robust Input Normalization: Includes a cleaning pipeline that removes punctuation and normalizes casing to ensure accurate pattern matching regardless of user formatting.
+ Tech Stack:
+Language: Python 3
+Libraries Used: string, sys (standard library only — no external dependencies)
 
-Safe Interaction: Eliminates the risk of "hallucinations" by restricting the bot's output exclusively to approved, hardcoded knowledge.
+Features:
+Lightweight, dependency-free chatbot engine
+Clean input preprocessing (case-insensitive, punctuation-stripped)
+Easily extendable response dictionary
+Graceful handling of unexpected session termination (EOF)
+Simple CLI-based interaction loop
 
-Low Latency: Optimized for rapid execution, providing near-instant responses.
+Future Improvements:
+Expand the response dictionary with more topics
+Add fuzzy matching for input that doesn't exactly match a keyword
+Integrate a real LLM backend with guardrails for open-ended questions
+Add unit tests for _preprocess_input() and get_response()
 
-Technical Approach
-The engine utilizes a dictionary-based mapping system to link normalized user intents to predefined responses. By decoupling the input cleaning logic from the response retrieval mechanism, the system is both easy to maintain and straightforward to audit.
 
-Developer
-Developed by: Rahul Kumar
-
-Getting Started
-To integrate this engine, initialize the ChatbotEngine class and invoke the run() method. Responses can be easily modified or extended by updating the internal response dictionary.
-
-Built with passion by Rahul Kumar.
 ![image alt](https://github.com/R56053/Rule-Based-AI-Chatbot/blob/25ec3d7bc40d3847e760469fb467f564ec3947ca/chatbot.png)
