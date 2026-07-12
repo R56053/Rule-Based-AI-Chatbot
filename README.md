@@ -23,4 +23,4 @@ Getting Started
 To integrate this engine, initialize the ChatbotEngine class and invoke the run() method. Responses can be easily modified or extended by updating the internal response dictionary.
 
 Built with passion by Rahul Kumar.
-![image alt] (https://github.com/R56053/Rule-Based-AI-Chatbot/blob/02e5e136330acb4042520846294b706bf4b553df/chatbot.png)
+![image alt](https://github.com/R56053/Rule-Based-AI-Chatbot/blob/25ec3d7bc40d3847e760469fb467f564ec3947ca/chatbot.png)
